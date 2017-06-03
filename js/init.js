@@ -1,0 +1,1 @@
+document.getElementById("player").innerHTML = "Hello JavaScript!";
