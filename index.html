@@ -7,16 +7,24 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
-    <title>Rock, Paper, Scissors</title>
+    <title>Game Center</title>
 </head>
 
 <body>
     <header>
         <div class="jumbotron">
-            <h1>Game Center</h1>
+            <h1 class="animated bounce infinite">Game Center</h1>
         </div>
     </header>
+    <main>
+        <h1 class="game-title" id="rps-title">Rock, Paper, Scissors</h1>
     <div class="game-box">
+        <div id="overlay">
+            <div id="overlay-content">
+                <button class="btn" id="start-button" onclick="start();">Start Game</button>
+
+            </div>
+        </div>
         <div class="banner" id="players">
             <table class="table center teble-responsive">
                 <tr>
@@ -53,20 +61,21 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="banner" id="options">
-            <div class="col-xs-4">
-                <img class="image" src="images/fist.png" id="rock">
-            </div>
-            <div class="col-xs-4">
-                <img class="image" src="images/paper.png" id="paper">
-            </div>
-            <div class="col-xs-4">
-                <img class="image" src="images/scissors.png" id="scissors">
+            <div class="banner" id="options">
+                <div class="col-xs-4">
+                    <img class="image" src="images/fist.png" id="rock">
+                </div>
+                <div class="col-xs-4">
+                    <img class="image" src="images/paper.png" id="paper">
+                </div>
+                <div class="col-xs-4">
+                    <img class="image" src="images/scissors.png" id="scissors">
+                </div>
             </div>
         </div>
     </div>
-    <footer id="footer">
+    </main>
+    <footer class="footer">
     </footer>
 </body>
 <script src="init.js"></script>

@@ -8,6 +8,7 @@ let finalOutcome = ["you won!", "ah you lost", "tie"];
 let round = 0;
 let totalRound = 10;
 let retryButton = document.getElementById("retry-button");
+let startButton = document.getElementById("start-button");
 
 // ROCK
 function rps(rock, paper, scissors) {
@@ -134,4 +135,9 @@ function disabled() {
 
 function refresh() {
     location.reload();
+}
+
+function start(){
+    let overlay = document.getElementById("overlay");
+    overlay.style.visibility = "hidden";
 }
